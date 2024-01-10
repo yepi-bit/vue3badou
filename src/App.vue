@@ -15,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/dynamicLoad">DynamicLoad</RouterLink>
         <RouterLink to="/vue3Table">vue3Table</RouterLink>
+        <RouterLink to="/barEchart">barEchart</RouterLink>
       </nav>
     </div>
   </header>

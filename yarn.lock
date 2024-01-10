@@ -879,6 +879,14 @@ debug@^4.1.0, debug@^4.3.1:
   dependencies:
     ms "2.1.2"
 
+echarts@^5.4.3:
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-5.4.3.tgz#f5522ef24419164903eedcfd2b506c6fc91fb20c"
+  integrity sha512-mYKxLxhzy6zyTi/FaEbJMOZU1ULGEQHaeIeuMR5L+JnJTpz+YR03mnnpBhbR4+UYJAgiXgpyTVLffPAjOTLkZA==
+  dependencies:
+    tslib "2.3.0"
+    zrender "5.4.4"
+
 electron-to-chromium@^1.4.601:
   version "1.4.617"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.617.tgz#3b0dde6c54e5f0f26db75ce6c6ae751e5df4bf75"
@@ -1399,6 +1407,11 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+tslib@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
+
 type-fest@^3.8.0:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.13.1.tgz#bb744c1f0678bea7543a2d1ec24e83e68e8c8706"
@@ -1502,3 +1515,10 @@ yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
+
+zrender@5.4.4:
+  version "5.4.4"
+  resolved "https://registry.yarnpkg.com/zrender/-/zrender-5.4.4.tgz#8854f1d95ecc82cf8912f5a11f86657cb8c9e261"
+  integrity sha512-0VxCNJ7AGOMCWeHVyTrGzUgrK4asT4ml9PEkeGirAkKNYXYzoPJCLvmyfdoOXcjTHPs10OZVMfD1Rwg16AZyYw==
+  dependencies:
+    tslib "2.3.0"

@@ -23,6 +23,11 @@ const router = createRouter({
       path: '/vue3Table',
       name: 'vue3Table',
       component: () => import('../views/vue3Table.vue')
+    },
+    {
+      path: '/barEchart',
+      name: 'barEchart',
+      component: () => import('../views/barEchart.vue')
     }
   ]
 })
