@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/barEchart',
       name: 'barEchart',
       component: () => import('../views/barEchart.vue')
+    },
+    {
+      path: '/animationSroll',
+      name: 'animationSroll',
+      component: () => import('../views/animationSroll.vue')
     }
   ]
 })
