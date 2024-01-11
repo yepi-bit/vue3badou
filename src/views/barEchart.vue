@@ -3,14 +3,12 @@
 </template>
 
 <script setup>
-import {ref, onMounted} from 'vue';
+import {ref, onMounted, computed} from 'vue';
 import * as echarts from "echarts";
 
 const pieChart = ref(null);
-
-onMounted(() => {
-  const chartInstance = echarts.init(pieChart.value);
-  const option = {
+const barName = computed(() => {
+  return {
     title: {
       text: '饼图示例',
       left: 'center'
@@ -29,30 +27,40 @@ onMounted(() => {
         radius: ['45%', '70%'],
         avoidLabelOverlap: false,
         label: {
-          show: false,
-          position: 'center'
+          show: true,
+          // position: 'center',  // 鼠标移入文字中心显示
+          formatter(param) {
+            return param.value + ' (' + param.percent * 2 + '%)'; // 百分比
+          }
         },
         emphasis: {
           label: {
             show: true,  // 饼图中心显示文字
             fontSize: '30',
             fontWeight: 'bold'
-          }
+          },
         },
         labelLine: {
-          show: false
+          show: true  // 指示线显示
         },
         data: [
           {value: 335, name: '直接访问'},
           {value: 310, name: '邮件营销'},
           {value: 234, name: '联盟广告'},
           {value: 135, name: '视频广告'},
-          {value: 1548, name: '搜索引擎'}
+          {value: 1548, name: '搜索引擎'},
         ]
       }
     ]
   };
-  chartInstance.setOption(option);
+})
+
+onMounted(() => {
+  const chartInstance = echarts.init(pieChart.value);
+  chartInstance.setOption(barName.value);
+  window.onresize = () => {
+    barName.value.resize();
+  };
 })
 </script>
 
