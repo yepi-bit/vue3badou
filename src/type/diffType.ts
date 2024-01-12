@@ -1,0 +1,1 @@
+export type DialogType = normal | info | warn | success
