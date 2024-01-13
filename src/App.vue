@@ -17,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/vue3Table">vue3Table</RouterLink>
         <RouterLink to="/barEchart">barEchart</RouterLink>
         <RouterLink to="/animationSroll">animationSroll</RouterLink>
+        <RouterLink to="/courseView">courseView</RouterLink>
       </nav>
     </div>
   </header>
