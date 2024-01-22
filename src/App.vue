@@ -18,6 +18,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/barEchart">barEchart</RouterLink>
         <RouterLink to="/animationSroll">animationSroll</RouterLink>
         <RouterLink to="/courseView">courseView</RouterLink>
+        <RouterLink to="/gradeCourse">gradeCourse</RouterLink>
+        <RouterLink to="/allGrade">allGrade</RouterLink>
       </nav>
     </div>
   </header>
