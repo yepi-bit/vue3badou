@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div>time2</div>
     <el-date-picker v-model="selectedDate1" type="date" @change="handleDatePickerChange"></el-date-picker>
     <el-date-picker v-model="selectedDate2" type="date" :disabled-date="disabledDate"></el-date-picker>
   </div>
