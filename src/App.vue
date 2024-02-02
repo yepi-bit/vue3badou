@@ -20,6 +20,9 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/courseView">courseView</RouterLink>
         <RouterLink to="/gradeCourse">gradeCourse</RouterLink>
         <RouterLink to="/allGrade">allGrade</RouterLink>
+        <RouterLink to="/timePicker">timePicker</RouterLink>
+        <RouterLink to="/selfCourse">selfCourse</RouterLink>
+        <RouterLink to="/rectArea">rectArea</RouterLink>
       </nav>
     </div>
   </header>

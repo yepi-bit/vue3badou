@@ -1,6 +1,13 @@
 <template>
   <div>
+    <div>
+      .env.dev--------{{ meta }}
+    </div>
     <p>Collapse tags</p>
+    <el-select v-model="dataValue" :disabled="isDisabled" :class="{ 'custom-disabled': isDisabled }">
+      <el-option v-for="option in options2" :key="option.value" :label="option.label" :value="option.value"></el-option>
+    </el-select>
+    <el-button @click="saveSelection">保存</el-button>
     <el-cascader
         v-model="dataValue"
         :options="options"
@@ -30,6 +37,18 @@ const dataValue = ref(null)
 const dataValueChange = () => {
   alert(dataValue.value)
 }
+const meta = ref(import.meta.env.VITE_DEV)
+const isDisabled = ref(false)
+const saveSelection = () => {
+  isDisabled.value = true
+}
+const options2 = [
+  {label: '选项1', value: '1'},
+  {label: '选项2', value: '2'},
+  {label: '选项3', value: '3'},
+  {label: '选项4', value: '4'},
+  {label: '选项5', value: '5'},
+]
 const options = [
   {
     value: 1,
@@ -114,3 +133,8 @@ const options = [
   },
 ]
 </script>
+<style lang="scss">
+.custom-disabled {
+  pointer-events: none; /* 禁用鼠标事件 */
+}
+</style>

@@ -48,6 +48,21 @@ const router = createRouter({
       path: '/allGrade',
       name: 'allGrade',
       component: () => import('../views/allGrade.vue')
+    },
+    {
+      path: '/timePicker',
+      name: 'timePicker',
+      component: () => import('../views/timePicker.vue')
+    },
+    {
+      path: '/selfCourse',
+      name: 'selfCourse',
+      component: () => import('../views/selfCourse.vue')
+    },
+    {
+      path: '/rectArea',
+      name: 'rectArea',
+      component: () => import('../views/rectArea.vue')
     }
   ]
 })

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
+    "dev2": "vite --mode dev",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -13,10 +14,12 @@
   "dependencies": {
     "echarts": "^5.4.3",
     "element-plus": "^2.4.4",
+    "file-saver": "^2.0.5",
     "moment": "^2.29.4",
     "pinia": "^2.1.7",
     "vue": "^3.3.11",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
