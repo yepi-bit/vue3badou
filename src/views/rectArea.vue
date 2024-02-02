@@ -2,7 +2,7 @@
   <div>
     <el-input-number v-model="sideLength" :min="1" :max="100" style="margin-bottom: 12px"></el-input-number>
     <div>2</div>
-    <div>3</div>
+    <div>5</div>
     <div class="container" :style="{ gridTemplateColumns: `repeat(${sideLength}, 1fr)` }">
       <div v-for="(area, index) in areas" :key="index" class="sub-square" :style="{ backgroundColor: area.color, gridArea: area.gridArea }"></div>
     </div>
