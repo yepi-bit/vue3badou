@@ -4,7 +4,6 @@
     <div>2</div>
     <div>5</div>
     <div>6</div>
-    <div>8</div>
     <div class="container" :style="{ gridTemplateColumns: `repeat(${sideLength}, 1fr)` }">
       <div v-for="(area, index) in areas" :key="index" class="sub-square" :style="{ backgroundColor: area.color, gridArea: area.gridArea }"></div>
     </div>
