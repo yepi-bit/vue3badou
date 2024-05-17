@@ -1,6 +1,6 @@
 <template>
   <div>
-    接收数据: {{ accText }}111222
+    接收数据: {{ accText }}0
   </div>
 </template>
 <script setup>
