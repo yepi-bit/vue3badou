@@ -63,6 +63,21 @@ const router = createRouter({
       path: '/rectArea',
       name: 'rectArea',
       component: () => import('../views/rectArea.vue')
+    },
+    {
+      path: '/reward',
+      name: 'reward',
+      component: () => import('../views/reward.vue')
+    },
+    {
+      path: '/webSocket',
+      name: 'webSocket',
+      component: () => import('../views/webSocket.vue')
+    },
+    {
+      path: '/sseView',
+      name: 'sseView',
+      component: () => import('../views/sseView.vue')
     }
   ]
 })
