@@ -2,7 +2,7 @@
   <div>
     <p v-if="isConnected">已连接</p>
     <p v-else>未连接</p>
-    <p>{{ message ? message : '暂无' }}</p>11
+    <p>{{ message ? message : '暂无' }}</p>11123
   </div>
 </template>
 
